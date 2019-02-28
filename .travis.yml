@@ -1,0 +1,8 @@
+dist: debian
+sudo: require
+language: cpp
+install:
+  - sudo apt install g++
+  - sudo apt install build-essential
+script:
+  - g++ mainserver.cpp -pthread
